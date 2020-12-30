@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+   
+  </head>
+  <body>
+
+<!-- <div id="d1">
+  <p id="p1">
+    bubbling!
+  </p>
+</div>
+<br>
+<div id="d2">
+  <p id="p2">
+    capturing!
+  </p>
+</div> -->
+
+    <div id="heading">
+      <h1>Stick-It notes</h1>
+      <p id="ts">By Amulya Krishnan</p>
+    </div>
+    <div id="form">
+      <form id="inputform">
+        <input
+          type="text"
+          name="title"
+          id="new-note-title-input"
+          class="input-text"
+          placeholder="Title"
+          autocomplete="off"
+          required 
+          autofocus
+        />
+        <input
+        type="text"
+        name="content"
+        id="new-note-body-input"
+        class="input-text"
+        placeholder="Content"
+        autocomplete="off"
+        required
+      />
+      <button id="submitBtn" type="submit" class="btn">Create Note</button>
+      </form>
+    </div>
+    
+    <h3 id="no-notes">No notes found, add one!</h3>
+    <ul id="notes">
+        <!-- <li>
+            <a href="#">
+                <h2>Some notes</h2>
+                <button class="delete">X</button>
+                <p>Content of note</p>
+            </a>
+        </li> -->
+    </ul>
+    <script src="js/script.js"></script>
+
+    <!-- <script>
+      document.getElementById("p1").addEventListener("click",function(){
+        alert("bubbling : inner most 1st event handled")
+      },false);
+      document.getElementById("d1").addEventListener("click",function(){
+        alert("sucess bubbling")
+      },false);
+      document.getElementById("p2").addEventListener("click",function(){
+        alert("capturing: 1st outer most is executed or event handled")
+      },true);
+      document.getElementById("d2").addEventListener("click",function(){
+        alert("capturing sucess")
+      },true);
+  </script> -->
+  </body>
+</html>
